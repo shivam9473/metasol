@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mettasol Energy (OPC) Private Limited</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--s:#f3f6fa;--t:#12202f;--m:#5a6a7a;--b:#0b2545;--a:#f59e0b;--l:#e2e8f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d141c;--s:#15202c;--t:#e8eef5;--m:#9fb0c1;--b:#06101e;--l:#25354a}}
+:root[data-theme="dark"]{--bg:#0d141c;--s:#15202c;--t:#e8eef5;--m:#9fb0c1;--b:#06101e;--l:#25354a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--t);font-family:'Open Sans',system-ui,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.w{max-width:1200px;margin:0 auto;padding:0 20px}
+.top{background:var(--b);color:#c5d1e0;font-size:13px;padding:7px 0}.top .w{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--l)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-weight:800;font-size:21px;letter-spacing:.5px}.logo i{color:var(--a);font-style:normal}
+nav>ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;height:72px}
+nav>ul>li{position:relative;display:flex;align-items:center}
+nav>ul>li>a{padding:0 14px;font-weight:700;font-size:13px;text-transform:uppercase;height:72px;display:flex;align-items:center;border-bottom:3px solid transparent}
+nav>ul>li:hover>a{color:var(--a);border-color:var(--a)}
+.mega{position:absolute;top:72px;left:-40px;width:560px;background:var(--bg);border:1px solid var(--l);border-top:3px solid var(--a);box-shadow:0 14px 30px #0003;display:none;grid-template-columns:1fr 1fr;gap:20px;padding:24px}
+li:hover>.mega{display:grid}
+.mega h5{margin:0 0 8px;font-size:12px;text-transform:uppercase;color:var(--a);letter-spacing:1px}
+.mega a{display:block;padding:5px 0;font-size:14px;color:var(--m)}.mega a:hover{color:var(--a)}
+.rec{background:var(--b);color:#fff;border-radius:6px;padding:18px}.rec small{color:var(--a);font-weight:700;letter-spacing:1px}.rec b{display:block;font-size:17px;margin:4px 0}.rec span{font-size:13px;color:#c5d1e0}
+.btn{display:inline-block;padding:12px 26px;border-radius:4px;font-weight:700;font-size:14px;text-transform:uppercase;background:var(--a);color:#1a1200;border:2px solid var(--a);cursor:pointer;font-family:inherit}
+.btn.g{background:transparent;color:#fff;border-color:#fff}.btn:hover{filter:brightness(1.08)}
+.burger{display:none;background:none;border:0;font-size:28px;color:var(--t);cursor:pointer}
+.hero{position:relative;color:#fff;overflow:hidden;min-height:560px;background:#0b2545}
+.sl{position:absolute;inset:0;opacity:0;transition:opacity .9s;display:flex;align-items:center}
+.sl.on{opacity:1;position:relative;min-height:560px}
+.s1{background:linear-gradient(110deg,#06101e 20%,#0b2545cc),radial-gradient(circle at 85% 40%,#f59e0b88,transparent 40%),#0b2545}
+.s2{background:linear-gradient(110deg,#06101e 20%,#0f3b2ecc),radial-gradient(circle at 85% 40%,#34d39966,transparent 40%),#0f3b2e}
+.s3{background:linear-gradient(110deg,#06101e 20%,#3a1d0acc),radial-gradient(circle at 85% 40%,#fb923c77,transparent 40%),#3a1d0a}
+.sl h1{font-size:clamp(32px,5.5vw,60px);line-height:1.1;margin:0 0 18px;max-width:780px;font-weight:800}
+.sl p{max-width:560px;color:#d5deea;font-size:18px;margin:0 0 30px}.sl .btn+.btn{margin-left:10px}
+.dots{position:absolute;bottom:22px;left:0;right:0;display:flex;gap:8px;justify-content:center;z-index:5}
+.dots button{width:34px;height:5px;border:0;background:#fff6;cursor:pointer;border-radius:3px}.dots .on{background:var(--a)}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);margin-top:-56px;position:relative;z-index:6;box-shadow:0 10px 30px #0003;border-radius:8px;overflow:hidden}
+.cats a{background:var(--bg);padding:26px 14px;text-align:center;font-weight:700;border-right:1px solid var(--l);transition:.2s}
+.cats a:hover{background:var(--a);color:#1a1200}.cats em{display:block;font-size:34px;font-style:normal;margin-bottom:4px}
+section{padding:84px 0}.alt{background:var(--s)}
+.tag{color:var(--a);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+h2{font-size:clamp(26px,3.6vw,38px);margin:4px 0 12px;font-weight:800;line-height:1.2}.sub{color:var(--m);max-width:640px;margin:0 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.pc{background:var(--bg);border:1px solid var(--l);border-radius:8px;overflow:hidden;transition:.25s}.pc:hover{transform:translateY(-6px);box-shadow:0 14px 30px #0002}
+.pi{height:170px;display:grid;place-items:center;font-size:56px;background:linear-gradient(135deg,var(--b),#1d4e89)}
+.pc div.x{padding:22px}.pc h3{margin:0 0 6px}.pc p{margin:0 0 12px;color:var(--m);font-size:15px}.pc a{color:var(--a);font-weight:700;font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.panel{min-height:340px;border-radius:12px;background:linear-gradient(135deg,var(--b),#1d4e89);display:grid;place-items:center;color:var(--a);font-weight:800;font-size:20px;text-align:center;padding:20px;position:relative}
+.badge{position:absolute;left:-16px;bottom:24px;background:var(--a);color:#1a1200;padding:14px 20px;border-radius:6px;font-size:14px}.badge b{font-size:26px;display:block}
+ul.ck{list-style:none;padding:0;margin:0 0 26px}ul.ck li{padding:5px 0 5px 28px;position:relative}ul.ck li:before{content:"✔";position:absolute;left:0;color:var(--a)}
+.stats{background:var(--b);color:#fff;padding:60px 0}.stats .w{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stats b{display:block;font-size:44px;color:var(--a);font-weight:800}.stats span{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:#c5d1e0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.tabs button{padding:11px 22px;border:1px solid var(--l);background:var(--bg);color:var(--t);border-radius:30px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs .on{background:var(--a);border-color:var(--a);color:#1a1200}.tp{display:none}.tp.on{display:block}
+.prof{background:linear-gradient(110deg,var(--b),#1d4e89);color:#fff;border-radius:12px;padding:44px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.prof h3{margin:0 0 6px;font-size:26px}.prof p{margin:0;color:#c5d1e0}
+.mq{overflow:hidden;border-block:1px solid var(--l);padding:18px 0}.mt{display:flex;gap:16px;width:max-content;animation:m 28s linear infinite}
+.mt span{padding:14px 34px;background:var(--s);border-radius:6px;font-weight:700;color:var(--m);white-space:nowrap}@keyframes m{to{transform:translateX(-50%)}}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:56px}form{display:grid;gap:14px}
+input,textarea,select{width:100%;padding:13px 14px;border:1px solid var(--l);border-radius:4px;background:var(--bg);color:var(--t);font:inherit}
+.info p{margin:0 0 18px}.info b{display:block;color:var(--a);font-size:13px;text-transform:uppercase;letter-spacing:1px}
+footer{background:var(--b);color:#c5d1e0;padding:60px 0 24px;font-size:14px}
+.fc{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:30px}footer h4{color:#fff;margin:0 0 12px;text-transform:uppercase;font-size:13px;letter-spacing:1px}
+footer ul{list-style:none;margin:0;padding:0;line-height:2.1}footer a:hover{color:var(--a)}
+.cp{border-top:1px solid #ffffff22;margin-top:30px;padding-top:18px;font-size:13px}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;font-weight:700;padding:12px 18px;border-radius:30px;box-shadow:0 4px 14px #0005;z-index:50;font-size:14px}
+.md{position:fixed;inset:0;background:#000a;z-index:60;display:none;place-items:center;padding:20px}.md.on{display:grid}
+.mb{background:var(--bg);border-radius:10px;padding:30px;width:100%;max-width:440px;position:relative}.mb h3{margin:0 0 16px}.cl{position:absolute;right:14px;top:8px;background:none;border:0;font-size:26px;color:var(--t);cursor:pointer}
+@media(max-width:900px){.burger{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--l);padding:10px 20px}nav.on{display:block}nav>ul{flex-direction:column;height:auto}nav>ul>li>a{height:46px}.mega{display:none!important}.two,.ct,.fc{grid-template-columns:1fr}.cats{grid-template-columns:repeat(2,1fr);margin-top:-30px}.stats .w{grid-template-columns:repeat(2,1fr)}section{padding:56px 0}.badge{left:10px}.hq{display:none}}
+</style></head><body>
+<div class="top"><div class="w"><span>📍 Sahibabad, Ghaziabad, Uttar Pradesh</span><span class="hq">Monday to Saturday · 10 AM – 6 PM</span></div></div>
+<header><div class="w nav">
+<a class="logo" href="#top">METTA<i>SOL</i> ENERGY</a>
+<nav id="nv"><ul>
+<li><a href="#products">Roof Top</a><div class="mega"><div><h5>Industrial Roof</h5><a href="#products">Trapezoid Roof</a><a href="#products">Corrugated Roof</a><a href="#products">Standing Seam</a><a href="#products">Tiled Roof</a></div><div class="rec"><small>WE RECOMMEND</small><b>Trapezoid Roof</b><span>Weather resistance, durability and aesthetics.</span></div></div></li>
+<li><a href="#products">Ground Mount</a><div class="mega"><div><h5>Ground Mount</h5><a href="#products">Mounting Structure</a><a href="#products">Water Solar Pump</a></div><div class="rec"><small>WE RECOMMEND</small><b>Mounting Structure</b><span>Easy installation, stability and safety.</span></div></div></li>
+<li><a href="#products">Carport</a></li><li><a href="#products">Agrivoltaics</a></li>
+<li><a href="#about">About</a><div class="mega"><div><h5>Company</h5><a href="#about">About Us</a><a href="#numbers">Our Numbers</a><a href="#partners">Our Partners</a></div><div class="rec"><small>WE ARE HIRING</small><b>Join Our Team</b><span>Exciting career opportunities await!</span></div></div></li>
+<li><a href="#contact">Contact</a></li></ul></nav>
+<a class="btn hq" href="#" onclick="q(event)">Get a Quote</a><button class="burger" onclick="nv.classList.toggle('on')">☰</button>
+</div></header>
+
+<div class="hero" id="top">
+<div class="sl s1 on"><div class="w"><h1>Building a Brighter Future One Solar Structure at a Time.</h1><p>Mettasol Energy delivers reliable, efficient solar solutions for industry, commerce and agriculture.</p><a class="btn" href="#" onclick="q(event)">Inquiry Now</a><a class="btn g" href="#about">Learn More</a></div></div>
+<div class="sl s2"><div class="w"><h1>Raising Solar Standards to New Heights.</h1><p>Durable, lightweight and easy to install systems for flexible solar power setups.</p><a class="btn" href="#products">Our Products</a></div></div>
+<div class="sl s3"><div class="w"><h1>Smart Solar for Farms &amp; Government Schemes.</h1><p>Subsidy ready, dual use and high ROI with our agrivoltaic solutions.</p><a class="btn" href="#" onclick="q(event)">Get a Quote</a></div></div>
+<div class="dots"><button class="on"></button><button></button><button></button></div></div>
+
+<div class="w"><div class="cats"><a href="#products"><em>🏭</em>Roof Top</a><a href="#products"><em>🌱</em>Ground Mount</a><a href="#products"><em>🧭</em>Tracker</a><a href="#products"><em>🚗</em>Carport</a><a href="#products"><em>🔩</em>Accessories</a></div></div>
+
+<section id="about"><div class="w two">
+<div class="panel">Company / factory photo here<div class="badge"><b>10+</b>Years of Experience</div></div>
+<div><span class="tag">About Us</span><h2>Raising Mounting System Standard to New Heights</h2>
+<p class="sub" style="margin-bottom:18px">Mettasol Energy (OPC) Private Limited, based in Sahibabad, Ghaziabad, brings dependable solar solutions to clients across India. Elevate your solar power with us.</p>
+<ul class="ck"><li>Strong, corrosion-resistant structures</li><li>Quick and easy installation</li><li>Engineering support for every project</li><li>On-time delivery across India</li></ul>
+<a class="btn" href="#" onclick="q(event)">Get a Quote</a></div></div></section>
+
+<section class="alt" id="products"><div class="w"><span class="tag">What We Offer</span><h2>Our Products</h2><p class="sub">Solar solutions engineered for performance, durability and easy installation.</p>
+<div class="grid">
+<div class="pc"><div class="pi">🏭</div><div class="x"><h3>Roof Top</h3><p>Industrial and flat-roof systems: trapezoid, corrugated, standing seam, ballast.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+<div class="pc"><div class="pi">🌱</div><div class="x"><h3>Ground Mount</h3><p>Robust mounting structures and water solar pump solutions.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+<div class="pc"><div class="pi">🧭</div><div class="x"><h3>Solar Tracker</h3><p>Single axis tracking to maximise energy generation.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+<div class="pc"><div class="pi">🚗</div><div class="x"><h3>Carport</h3><p>Shelter for vehicles with solar power and style.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+<div class="pc"><div class="pi">🌾</div><div class="x"><h3>Agrivoltaics</h3><p>Kusum Yojna ready, dual-use solar for farms.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+<div class="pc"><div class="pi">🔩</div><div class="x"><h3>Accessories</h3><p>Clamps, rails, fasteners and fittings for every system.</p><a href="#" onclick="q(event)">Get Quote →</a></div></div>
+</div></div></section>
+
+<section><div class="w two"><div><span class="tag">New</span><h2>Get Ready for Our Tracker</h2>
+<p class="sub" style="margin-bottom:18px">A simple, advanced tracking system with real-time tracking, remote diagnosis and intelligent features that keep your investment protected at all times.</p>
+<ul class="ck"><li>Real-time tracking</li><li>Remote diagnosis</li><li>Higher energy yield</li></ul><a class="btn" href="#" onclick="q(event)">Get a Quote</a></div>
+<div class="panel">Tracker image here</div></div></section>
+
+<div class="stats" id="numbers"><div class="w">
+<div><b><u data-n="60" data-s="K MTPA" style="text-decoration:none">0</u></b><span>Production Capacity</span></div>
+<div><b><u data-n="16" data-s=" GW+" style="text-decoration:none">0</u></b><span>Structure Supply</span></div>
+<div><b><u data-n="500" data-s=" Cr" style="text-decoration:none">0</u></b><span>Revenue</span></div>
+<div><b><u data-n="2000" data-s="+" style="text-decoration:none">0</u></b><span>Projects</span></div></div></div>
+
+<section id="sectors"><div class="w"><span class="tag">Industries</span><h2>Sectors We Serve</h2><p class="sub">Solutions for a wide range of industries.</p>
+<div class="tabs"><button class="on">Renewable Energy</button><button>Pre-Engineered Buildings</button><button>Telecommunication</button><button>Power Energy</button><button>Solar Lighting</button></div>
+<div class="tp on">Clean, reliable solar structures for utility, commercial and industrial renewable projects.</div>
+<div class="tp">Steel structures engineered for strength, speed of build and long life.</div>
+<div class="tp">Solar-ready infrastructure to power towers and remote telecom sites.</div>
+<div class="tp">Supporting power generation projects with dependable mounting systems.</div>
+<div class="tp">Solar street and area lighting solutions for cities, campuses and highways.</div></div></section>
+
+<section class="alt"><div class="w"><div class="prof"><div><h3>Download Our Company Profile</h3><p>Get the inside scoop on Mettasol Energy.</p></div><a class="btn" href="#">Download</a></div></div></section>
+
+<section id="partners"><div class="w"><span class="tag">Clients</span><h2>Our Trusted Partners</h2><p class="sub">We value long-term relationships with clients, from startups to large corporations.</p></div>
+<div class="mq"><div class="mt"><span>Partner One</span><span>Partner Two</span><span>Partner Three</span><span>Partner Four</span><span>Partner Five</span><span>Partner Six</span><span>Partner One</span><span>Partner Two</span><span>Partner Three</span><span>Partner Four</span><span>Partner Five</span><span>Partner Six</span></div></div></section>
+
+<section class="alt" id="contact"><div class="w ct"><div class="info"><span class="tag">Contact</span><h2>Get in Touch</h2><p class="sub" style="margin-bottom:24px">Fill in your details and we will respond promptly.</p>
+<p><b>Address</b>Plot No-48/1/8, Site IV, Ind Area Sahibabad, I.E. Sahibabad, Ghaziabad, Uttar Pradesh 201010, India</p><p><b>GSTIN</b>09AAVCM5828J1ZM</p><p><b>Timing</b>Monday to Saturday, 10 AM – 6 PM</p></div>
+<form onsubmit="s(event)"><input placeholder="Your Name*" required><input placeholder="Phone Number*" required><input type="email" placeholder="Email Address*" required><input placeholder="Organization"><textarea rows="4" placeholder="Requirement"></textarea><button class="btn">Send Inquiry</button></form></div></section>
+
+<footer><div class="w"><div class="fc">
+<div><div class="logo" style="color:#fff">METTA<i>SOL</i> ENERGY</div><p>Experts in solar energy solutions.</p><p>Plot No-48/1/8, Site IV, Ind Area Sahibabad, Ghaziabad, UP 201010<br>GSTIN 09AAVCM5828J1ZM</p></div>
+<div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#partners">Partners</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+<div><h4>Products</h4><ul><li><a href="#products">Roof Top</a></li><li><a href="#products">Ground Mount</a></li><li><a href="#products">Tracker</a></li><li><a href="#products">Carport</a></li></ul></div>
+<div><h4>Stay Updated</h4><form onsubmit="s(event)"><input placeholder="Your email" type="email" required><button class="btn">Subscribe</button></form></div></div>
+<div class="cp">© 2026 Mettasol Energy (OPC) Private Limited. All Rights Reserved.</div></div></footer>
+
+<a class="wa" href="#" onclick="q(event)">💬 Talk to our sales expert</a>
+<div class="md" id="md"><div class="mb"><button class="cl" onclick="md.classList.remove('on')">×</button><h3>Get a Great Price</h3><form onsubmit="s(event)"><input placeholder="Your Name*" required><input placeholder="Phone Number*" required><input type="email" placeholder="Email Address*" required><button class="btn">Submit</button></form></div></div>
+<script>
+const nv=document.getElementById('nv'),md=document.getElementById('md');
+function q(e){e.preventDefault();md.classList.add('on')}
+function s(e){e.preventDefault();e.target.innerHTML='<p><b>Thank you!</b> We will contact you shortly. (Demo form: connect to email/CRM)</p>'}
+let i=0;const sl=[...document.querySelectorAll('.sl')],dt=[...document.querySelectorAll('.dots button')];
+function go(n){i=n;sl.forEach((x,k)=>x.classList.toggle('on',k==n));dt.forEach((x,k)=>x.classList.toggle('on',k==n))}
+dt.forEach((d,k)=>d.onclick=()=>go(k));setInterval(()=>go((i+1)%3),5500);
+document.querySelectorAll('.tabs button').forEach((b,k)=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.tp').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tp')[k].classList.add('on')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const u=e.target,n=+u.dataset.n;let c=0;const t=setInterval(()=>{c+=Math.ceil(n/50);if(c>=n){c=n;clearInterval(t)}u.textContent=c+u.dataset.s},30);io.unobserve(u)}}));
+document.querySelectorAll('[data-n]').forEach(x=>io.observe(x));
+</script></body></html>
